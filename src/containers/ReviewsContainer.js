@@ -3,12 +3,12 @@ import ReviewInput from '../components/reviews/ReviewInput';
 import Reviews from '../components/reviews/Reviews';
 
 class ReviewsContainer extends Component {
-
+// this.props.restaurant 
   render() {
     return (
       <div>
-        <ReviewInput />
-        <Reviews />
+        <ReviewInput restaurant={this.props.restaurant}/>
+        <Reviews restaurant={this.props.restaurant}/>
       </div>
     )
   }
